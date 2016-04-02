@@ -1,4 +1,4 @@
-<%@ include file="/WEB-INF/pages/includes.jsp"%>
+<%@ include file="/WEB-INF/views/layout/header.jsp"%>
 	
 		<h1>Enter your credentials</h1>
 		<form action="j_spring_security_check" method="POST">

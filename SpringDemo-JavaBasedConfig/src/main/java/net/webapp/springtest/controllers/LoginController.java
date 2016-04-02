@@ -9,4 +9,9 @@ public class LoginController {
 	public String doLogin(){
 		return "login";
 	}
+	
+	@RequestMapping(value ="/person")
+	public String doPerson(){
+		return "person";
+	}
 }

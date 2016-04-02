@@ -1,5 +1,6 @@
 # set of little project to Test Spring Framework features 
 
+My repository for experimental work with Spring
 
 ## DONE
 
