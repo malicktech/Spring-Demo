@@ -12,7 +12,7 @@
 	
 	<modules>
 		<module>Demo1-JavaBasedConfig</module>
-		<module>Demo2-SpringCloud</module>
+		<!-- <module>Demo2-SpringCloud</module>-->
 	</modules>
 	
 </project>
