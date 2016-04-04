@@ -6,12 +6,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>net.demo</groupId>
-	<artifactId>SpringDemo</artifactId>
+	<artifactId>Spring-Demo</artifactId>
 	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
 	<modules>
-		<module>SpringDemo-JavaBasedConfig</module>
-		<module>SpringDemo-JavaBasedConfig-2</module>
+		<module>Demo1-JavaBasedConfig</module>
 	</modules>
+	
 </project>
