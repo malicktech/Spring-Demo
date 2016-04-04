@@ -14,13 +14,13 @@ import net.webapp.repository.SocieteRepository;
 @EnableEurekaClient
 @SpringBootApplication
 @Import({AppConfig.class})
-public class Application {
+public class SocieteApplication {
 
 	public static void main(String[] args) {
 		// SpringApplication.run(BourseSocieteServiceApplication.class, args);
 
 		// get context & injections de données exemples au démarrage
-		ApplicationContext ctx = SpringApplication.run(Application.class, args);
+		ApplicationContext ctx = SpringApplication.run(SocieteApplication.class, args);
 		SocieteRepository societeRepository = ctx.getBean(SocieteRepository.class);
 		Stream.of("ACCOR", "AIR LIQUIDE", "AIRBUS GROUP", "ALCATEL-LUCENT", "ALSTOM", "ARCELORMITTAL", "AXA",
 				"BNP PARIBAS ACT.A", "BOUYGUES", "CAP GEMINI", "CARREFOUR", "CREDIT AGRICOLE", "DANONE", "EDF",

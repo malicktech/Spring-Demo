@@ -50,22 +50,28 @@ eureka discovery : pour contacter le service d'neregistrement
 
 ### access :
  
-	localhost:8080/societes
-	localhost:8080/societes?page=0&size=3&sort=nom,desc
-	localhost:8080/societes/search/societesByKey?key=%25A%25&page=0&size=2
-
-	config service  : propiété d'un service 
+	start config service  : propiété d'un service 
 		localhost:8888/societe-service/master
 
-	eureka service : localhost:8761
-	 
-	to refresh micro service configuration : 
-		Post Request to -> localhost:8080/refresh 
-
-### manips
-
+	start eureka service : localhost:8761
+	
 	run multiple instances of micro service  :  
 		1. run -> run configiration -> add in tab arguments : --server.port=82 
-		repeat operation ifor post 83 & 84 for example
+		repeat operation ifor post 81 & 86 for example
 		or
 		generate jar and use cmd : start java -jar prjectname-0.0.1.jar --server.port=82 
+		
+	start proxy service : localhost:9999
+	 
+	to refresh micro service configuration : 
+		Post Request to -> localhost:81/refresh
+		
+	request to : 
+		localhost:9999/societe-service/sociestes
+		localhost:9999/societe-service/societes?page=0&size=3&sort=nom,desc
+		localhost:9999/societe-service/search/societesByKey?key=%25A%25&page=0&size=2
+		
+	les requêttes succesives seront traitées à tour de rôle par les différents instances de services déployé sur les différentes machines.
+
+
+	

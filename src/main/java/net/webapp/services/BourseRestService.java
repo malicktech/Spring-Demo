@@ -15,6 +15,7 @@ public class BourseRestService {
 	
 	@RequestMapping("/tellMe")
 	public String tellMe() {
+		System.out.println("============================ Response from Me");
 		return message;
 	}
 	
