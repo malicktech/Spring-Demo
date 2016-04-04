@@ -11,7 +11,7 @@ Gère les ordres d'achat ou de vente correspodants a des sociétés cotée en bo
 		
 ## Architechture
 
-![](https://github.com/diop-malick/Spring-Demo/tree/master/Demo2-SpringCloud)
+![](https://github.com/diop-malick/Spring-Demo/tree/master/Demo2-SpringCloud/Archi.PNG)
 
 
 elle montre :
