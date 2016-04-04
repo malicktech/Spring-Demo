@@ -54,11 +54,13 @@ eureka discovery : pour contacter le service d'neregistrement
 	localhost:8080/societes?page=0&size=3&sort=nom,desc
 	localhost:8080/societes/search/societesByKey?key=%25A%25&page=0&size=2
 
-	service conf : 
-		propiété d'un service : http://localhost:8888/societe-service/master
+	config service  : propiété d'un service 
+		localhost:8888/societe-service/master
 
+	eureka service : localhost:8761
+	 
 	to refresh micro service configuration : 
-		Post Request in http://localhost:8080/refresh 
+		Post Request to -> localhost:8080/refresh 
 
 ### manips
 

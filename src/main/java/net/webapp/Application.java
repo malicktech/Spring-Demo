@@ -4,12 +4,14 @@ import java.util.stream.Stream;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Import;
 
 import net.webapp.entities.Societe;
 import net.webapp.repository.SocieteRepository;
 
+@EnableEurekaClient
 @SpringBootApplication
 @Import({AppConfig.class})
 public class Application {
