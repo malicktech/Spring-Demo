@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.demo</groupId>
+		<artifactId>Spring-Demo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>Demo1-JavaBasedConfig</artifactId>
+	<name>Demo1-JavaBasedConfig</name>
+	<packaging>war</packaging>
+
+	<!-- ============================= PROPERTIES ============================= -->
+	<properties>
+		<version.java>1.8</version.java>
+		<source.encoding>UTF-8</source.encoding>
+
+		<version.hibernate-entitymanager>4.3.11.Final</version.hibernate-entitymanager>
+		<version.hibernate-validator>5.2.2.Final</version.hibernate-validator>
+		<version.mysql-connector-java>5.1.6</version.mysql-connector-java>
+
+		<version.spring-framework>4.2.3.RELEASE</version.spring-framework>
+		<version.spring-data-jpa>1.6.0.RELEASE</version.spring-data-jpa>
+		<version.spring-security>3.2.4.RELEASE</version.spring-security>
+		<version.javax.servlet-api>3.0.1</version.javax.servlet-api>
+		<version.aspectj>1.7.4</version.aspectj>
+		<version.logback>1.1.2</version.logback>
+		<version.slf4j>1.7.7</version.slf4j>
+		<version.log4j>1.2.15</version.log4j>
+		<version.h2>1.4.177</version.h2>
+		<version.logback>1.1.2</version.logback>
+		<version.junit>4.11</version.junit>
+		<version.commons-dbcp>1.4</version.commons-dbcp>
+
+		<!-- Version of maven plugins -->
+		<version.plugin.maven-eclipse-plugin>2.9</version.plugin.maven-eclipse-plugin>
+		<version.plugin.maven-compiler-plugin>2.5.1</version.plugin.maven-compiler-plugin>
+		<!-- <version.plugin.maven-resources-plugin>2.4.3</version.plugin.maven-resources-plugin> -->
+		<!-- <version.plugin.maven-source-plugin>2.1.2</version.plugin.maven-source-plugin> -->
+		<!-- <version.plugin.maven-javadoc-plugin>2.7</version.plugin.maven-javadoc-plugin> -->
+		<!-- <version.plugin.maven-release-plugin>2.2.2</version.plugin.maven-release-plugin> -->
+		<!-- <version.plugin.maven-deploy-plugin>2.8.1</version.plugin.maven-deploy-plugin> -->
+
+	</properties>
+
+
+	<!-- ============================= DEPENDANCIES ============================= -->
+	<dependencies>
+
+		<!-- Spring -->
+		<dependency> <!-- provides Application Context and spring-core -->
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${version.spring-framework}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${version.spring-framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${version.spring-framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${version.spring-framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${version.spring-framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${version.spring-framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${version.spring-framework}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency> <!-- AOP -->
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${version.spring-framework}</version>
+		</dependency>
+		<dependency> <!-- AspectJ : required by AOP, nedd ?????? -->
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${version.aspectj}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${version.aspectj}</version>
+		</dependency>
+		<!-- Required for xml-less configuration of Spring via @Configuration annotations -->
+		<!-- used in proxy-based Spring AOP -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+
+		<!-- Apache Commons Upload : parser les données binaire multipart du formulaire -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<!-- Spring Data JPA -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${version.spring-data-jpa}</version>
+		</dependency>
+
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${version.spring-security}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${version.spring-security}</version>
+		</dependency>
+
+		<!-- JPA Provider (Hibernate) -->
+		<!-- Include hibernate-jpa-api & javax & hibernate-core and hibernate-annotations -->
+		<!-- Only needed when using JPA instead of "pure Hibernate" -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${version.hibernate-entitymanager}</version>
+			<!-- <scope>runtime</scope> -->
+		</dependency>
+		<dependency> <!-- Bean Validation specification ? -->
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${version.hibernate-validator}</version>
+		</dependency>
+
+		<!-- MySQL Connector -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${version.mysql-connector-java}</version>
+			<!-- <scope>runtime</scope> -->
+		</dependency>
+
+		<!-- DataSource DB connection pooling -->
+		<dependency> <!-- don’t recommend it in production -->
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency> <!-- DataSource (HikariCP) , better for for production applications -->
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.2.5</version>
+		</dependency>
+
+		<!-- Database (H2) -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.185</version>
+		</dependency>
+
+		<!-- Servlet API - JSP - JSTL - TagLib -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${version.javax.servlet-api}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- bootstrap and Jquery dependency webjar -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>3.2.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.webjars</groupId>
+					<artifactId>jquery</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
+		<!-- Test JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${version.junit}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Logging API - Journalisation : SLF4J : (Simple Logging Facade for 
+			Java) SLF4J / LOGBack : plus puissante log4j logback : implémentation par 
+			défaut de slf4j-api virer log4j,JCL et common-logging jcl-over-slf4j : Bridge 
+			logging from JCL to SLF4j, make Spring use SLF4J instead of commons logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${version.slf4j}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${version.logback}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${version.slf4j}</version>
+			<!-- <scope>runtime</scope> -->
+		</dependency>
+
+	</dependencies>
+
+	<!-- ============================= BUILD ============================= -->
+	<build>
+		<plugins>
+
+			<!-- PLUGIN MAVEN ECLIPSE -->
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>${version.plugin.maven-eclipse-plugin}</version>
+				<configuration>
+					<additionalProjectnatures>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+			<!-- PLUGIN MAVEN COMPILER -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${version.plugin.maven-compiler-plugin}</version>
+				<configuration>
+					<source>${version.java}</source>
+					<target>${version.java}</target>
+					<encoding>${source.encoding}</encoding>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<!-- using xml-less approach, Configure Maven War Plugin to ignore web.xml -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			<!-- provides 2 goals to help execute the main method of Java programs 
+				with maven , with command mvn exec:exec -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<!-- Running in a phase -->
+				<!-- <executions> -->
+				<!-- </executions> -->
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>
