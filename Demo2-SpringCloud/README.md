@@ -1,18 +1,21 @@
-# Cloud Micro Services with Spring Cloud
+# Micro Services with Spring Cloud
 
-Application distribuée basé sur les micros service avec Spring Cloud
-gère les ordres d'achat ou de vente corespodants aux sociétés cotée en bourse
+Application distribuée basée sur les micros services avec Spring Cloud
+Gère les ordres d'achat ou de vente correspodants a des sociétés cotée en bourse
 
-un ms pour gérer les sociétés cotées en bourse
-un ms pour gérer les ordres d'achat ou de vente d'action
 
-inspired by : 
-Getting started with Spring Cloud by Josh Long
-https://youtu.be/SFDYdslOvu8
+## inspired by : 
+		Getting started with Spring Cloud by Josh Long
+		https://youtu.be/SFDYdslOvu8
 
-## Features
+		
+## Architechture
 
-elle montre : 
+![](https://github.com/diop-malick/Spring-Demo/tree/master/Demo2-SpringCloud)
+
+
+elle montre :
+ 
 - Comment mettre en oeuvre un micro service
 - Comment déployer le micro service en plusieurs instances
 - Comment Créer un micro service de configuration qui permet de centraliser la configuration des micro services.
@@ -25,33 +28,22 @@ elle montre :
 
 ## Modules
 
-MS societe					:  service de gestion des societes 
-MS ordre					: service de gestion des ordre
+	- eureka Registration service	: service d'enregistrement, annaire des MS, contient leur noms, ip 
+	- Configuration service			: centralise la config de l'ensemble des MS
+	- Proxy Service  				: sert d'interface entre le client HTTP et les micros service
+	- MS societe					: service pour gérer les sociétés cotées en bourse 
+	- MS ordre						: pour gérer les ordres d'achat ou de vente d'action
 
-eureka Registration service	: service d'enregistrement, annaire des MS, contient leur noms, ip 
-Configuration service		: centralise la config de l'ensemble des MS
-Proxy Service  				: sert d'interface entre le client HTTP et les micro service
 
- 	centraliser la configuration des applications des différents environnements.
+## Outils & Technos :
 
-## Technos :
+	- serveur Rabbit MQ (Protocole AMPQ) : broker le middleware, recois et diffuse les messages aux instances de micro services concernés
+	- JDK 8
+	- Spring Boot
+	- Spring Tools Suite
 
-serveur Rabbit MQ (Protocole AMPQ) : broker le middleware, recois et diffuse les messages aux instances de micro service concerné
 
-pom maven :
 
-restrepository : expose interface Jpa REPOSITORUT COME éTANT  UN SERICE
-
-todo / CHANGE RESTREPOSITORY to 2 layer 
-actuator : 	get micro services metrics
-stream rabbit : pour utiliser rabbit MQ
-eureka discovery : pour contacter le service d'neregistrement 
-
-### ARCHITECTURE 
-
-![](https://github.com/images/logo.png)
-![GitHub Logo](https://github.com/images/logo.png)
-Format: ![Alt Text](url)
 
 ### access :
  
