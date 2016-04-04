@@ -1,0 +1,12 @@
+package net.webapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BourseEurekaServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BourseEurekaServiceApplication.class, args);
+	}
+}
