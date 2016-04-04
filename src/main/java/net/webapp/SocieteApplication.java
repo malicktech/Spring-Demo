@@ -8,8 +8,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Import;
 
-import net.webapp.entities.Societe;
 import net.webapp.repository.SocieteRepository;
+import net.webapp.entities.Societe;
 
 @EnableEurekaClient
 @SpringBootApplication

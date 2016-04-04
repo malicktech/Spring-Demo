@@ -47,6 +47,11 @@ actuator : 	get micro services metrics
 stream rabbit : pour utiliser rabbit MQ
 eureka discovery : pour contacter le service d'neregistrement 
 
+### ARCHITECTURE 
+
+![](https://github.com/images/logo.png)
+![GitHub Logo](https://github.com/images/logo.png)
+Format: ![Alt Text](url)
 
 ### access :
  
@@ -70,6 +75,7 @@ eureka discovery : pour contacter le service d'neregistrement
 		localhost:9999/societe-service/sociestes
 		localhost:9999/societe-service/societes?page=0&size=3&sort=nom,desc
 		localhost:9999/societe-service/search/societesByKey?key=%25A%25&page=0&size=2
+		localhost:9999/names
 		
 	les requêttes succesives seront traitées à tour de rôle par les différents instances de services déployé sur les différentes machines.
 
