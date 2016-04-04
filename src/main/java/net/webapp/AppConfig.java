@@ -12,7 +12,6 @@ public class AppConfig extends RepositoryRestMvcConfiguration {
 
 	@Override
 	protected void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-		System.err.println("----------- configureRepositoryRestConfiguration ");
 		// add id on otput rest response 
 		config.exposeIdsFor(Societe.class);
 	}

@@ -32,7 +32,7 @@ eureka Registration service	: service d'enregistrement, annaire des MS, contient
 Configuration service		: centralise la config de l'ensemble des MS
 Proxy Service  				: sert d'interface entre le client HTTP et les micro service
 
- 	
+ 	centraliser la configuration des applications des différents environnements.
 
 ## Technos :
 
@@ -50,9 +50,15 @@ eureka discovery : pour contacter le service d'neregistrement
 
 ### access :
  
-localhost:8080/societes
-localhost:8080/societes?page=0&size=3&sort=nom,desc
-localhost:8080/societes/search/societesByKey?key=%25A%25&page=0&size=2
+	localhost:8080/societes
+	localhost:8080/societes?page=0&size=3&sort=nom,desc
+	localhost:8080/societes/search/societesByKey?key=%25A%25&page=0&size=2
+
+	service conf : 
+		propiété d'un service : http://localhost:8888/societe-service/master
+
+	to refresh micro service configuration : 
+		Post Request in http://localhost:8080/refresh 
 
 ### manips
 
