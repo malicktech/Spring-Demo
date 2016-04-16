@@ -12,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(securedEnabled=true)   // securise les methodes
+@EnableGlobalMethodSecurity(securedEnabled=true)   // securise tous les methodes
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 	
