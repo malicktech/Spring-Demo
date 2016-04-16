@@ -9,7 +9,7 @@
 	<version>0.0.1-SNAPSHOT</version>
   </parent>
 	
-	<artifactId>demo</artifactId>
+	<artifactId>Bourse-config-service</artifactId>
 	<packaging>jar</packaging>
 
 	<name>Bourse-config-service</name>

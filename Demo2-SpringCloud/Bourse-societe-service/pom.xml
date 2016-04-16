@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	
-		<parent>
+	<parent>
     <groupId>net.webapp</groupId>
 	<artifactId>Demo2-SpringCloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>

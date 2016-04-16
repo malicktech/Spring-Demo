@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inscription</title>
+		<!-- STYLE	 -->
+		<link rel="stylesheet" type="text/css" href="vendors/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+	</head>
+	
+	<body ng-app="myApp" ng-controller="ListEtudiantController" >
+	
+
+        <!-- LIST ETUDAINT	-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="panel panel-info top-spacer">
+                <div class="panel-heading">List Etudiants</div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th><th>PRENOM</th><th>NOM</th><th>DATE Naissance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="e in pageEtudiant.content">
+                                <td>{{e.idEtudiant}}</td>
+                                <td>{{e.prenom}}</td>
+                                <td>{{e.nom}}</td>
+                                <td>{{e.dateNaissance |date:'yyyy-MM-dd'}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container spacer">
+                    <ul class="nav nav-pills">
+                        <li class="clickable" ng-class="{active:$index==pageCourante}" ng-repeat="p in pages track by $index">
+                            <a ng-click="goToPage($index)">{{$index}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+		<!-- SCRIPT	 -->	
+		<script type="text/javascript" src="vendors/angular-1.4.8/angular.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		
+	</body>
+</html>
