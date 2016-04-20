@@ -26,11 +26,14 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeServiceInterface;
 	
+	private static final String INDEX_VIEW_NAME = "index";
+	private static final String EDITPAGE_VIEW_NAME = "editPage";
+	
 	@RequestMapping(value = {"/","index","/savepage"}, method = RequestMethod.GET)
 	public String savePage(Model model) {
 		model.addAttribute("employee", new Employee());
 		model.addAttribute("allEmployees", (ArrayList<Employee>)employeeServiceInterface.getAllEmployees());
-		return "index";
+		return INDEX_VIEW_NAME;
 	}
 	
 	/**
@@ -80,7 +83,7 @@ public class EmployeeController {
 		  Employee editEmployee = employeeServiceInterface.findEmployee(empId);
 		  if(editEmployee!=null) {
 		       model.addAttribute("editEmployee", editEmployee);
-		       return "editPage";
+		       return EDITPAGE_VIEW_NAME;
 		  } else {
 			  redirectAttributes.addFlashAttribute("status","notfound");
 		  }

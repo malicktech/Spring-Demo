@@ -30,6 +30,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 
 	@Bean
 	public TemplateResolver getTemplateResolver() {
+		// public ServletContextTemplateResolver templateResolver() {
 		SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
 		// resolver.setPrefix("/WEB-INF/views/");
 		resolver.setPrefix("classpath:/templates/");
@@ -42,17 +43,20 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 	}
 
 	@Bean
-	public SpringTemplateEngine getTemplateEngine() {
+	public SpringTemplateEngine templateEngine() {
 		SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-		templateEngine.setTemplateResolver(getTemplateResolver());
+		// templateEngine.setTemplateResolver(getTemplateResolver());
+		templateEngine.addTemplateResolver(getTemplateResolver());
+		// templateEngine.addTemplateResolver(urlTemplateResolver());
 		// templateEngine.setDialect(new LayoutDialect());
+		// templateEngine.addDialect(new SpringSecurityDialect());
 		return templateEngine;
 	}
 
 	@Bean
 	public ViewResolver getThymeleafViewResolver() {
 		ThymeleafViewResolver viewresolver = new ThymeleafViewResolver();
-		viewresolver.setTemplateEngine(getTemplateEngine());
+		viewresolver.setTemplateEngine(templateEngine());
 		viewresolver.setOrder(0);
 		viewresolver.setViewNames(new String[] { "templates/*" });
 
