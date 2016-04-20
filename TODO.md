@@ -19,7 +19,7 @@ http://ippon.developpez.com/tutoriels/spring/spring-loaded/
 	
 	* Spring Cloud
 	
-	* Spring Boot
+	* Spring Boot + integration test + selenium
 	
 	
 

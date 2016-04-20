@@ -1,0 +1,6 @@
+
+
+demo4-1 :	
+http://frameworkonly.com/spring-boot-crud-tutorial-thymeleaf-spring-data-jpa-hikaricp/
+http://blog.codeleak.pl/2013/11/thymeleaf-template-layouts-in-spring.html
+http://www.thymeleaf.org/doc/articles/layouts.html
