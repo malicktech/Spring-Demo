@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			.rolePrefix("ROLE_");
 		
 		// TODO
-		//		auth.ldapAuthentication()
+		// auth.ldapAuthentication()
 		
 		// TODO facebok twitter
 	}
