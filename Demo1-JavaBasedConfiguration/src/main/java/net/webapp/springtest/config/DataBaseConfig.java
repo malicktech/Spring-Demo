@@ -42,6 +42,8 @@ public class DataBaseConfig {
 	@Resource
 	private Environment env;
 
+		// la source de données H2
+		
 	// @Bean(destroyMethod = "close") // needed when use with pool implmentation like hikari, to shutdown the data
 	// source immediately when the spring application shuts down
 	// This is not needed in the DriverManagerDataSource
@@ -59,6 +61,9 @@ public class DataBaseConfig {
 		dataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
 		return dataSource;
 	}
+	
+		// EntityManagerFactory
+
 
 	@Bean
 	public EntityManagerFactory entityManagerFactory() {
@@ -85,6 +90,8 @@ public class DataBaseConfig {
 		return properties;
 	}
 
+		// Transaction manager
+
 	@Bean
 	public PlatformTransactionManager transactionManager() {
 		/*
@@ -94,6 +101,7 @@ public class DataBaseConfig {
 		return new JpaTransactionManager(entityManagerFactory());
 	}
 	
+	// le provider JPA
 	// JPAVendorAdapter does seem to be the preferred approach
 	 @Bean 
 	 public JpaVendorAdapter jpaVendorAdaper() { 

@@ -2,86 +2,34 @@ package com.frameworkonly.webapp.config;
 
 import java.util.Locale;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
-import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.thymeleaf.spring4.SpringTemplateEngine;
-import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
-import org.thymeleaf.spring4.view.ThymeleafViewResolver;
-import org.thymeleaf.templateresolver.TemplateResolver;
 
-// @Configuration
+@Configuration
+//@EnableWebMvc
 public class MvcConfig extends WebMvcConfigurerAdapter {
+   
+//	@Override
+//    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+//        configurer.enable();
+//    }
+	
+// If you put your css in the static folder, you dont need the addResourceHandlers method.
+//	@Override
+//	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//		registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
+//	registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+//	}
 
-	/*
-	 * ThymeLeaf configuration
-	 * =========================================================================
-	 */
-
-	@Bean
-	public TemplateResolver getTemplateResolver() {
-		// public ServletContextTemplateResolver templateResolver() {
-		SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
-		// resolver.setPrefix("/WEB-INF/views/");
-		resolver.setPrefix("classpath:/templates/");
-		resolver.setSuffix(".html");
-		resolver.setTemplateMode("HTML5");
-		resolver.setCharacterEncoding("UTF-8");
-		resolver.setCacheable(false);
-
-		return resolver;
-	}
-
-	@Bean
-	public SpringTemplateEngine templateEngine() {
-		SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-		 templateEngine.setTemplateResolver(getTemplateResolver());
-		// templateEngine.addTemplateResolver(urlTemplateResolver());
-		// templateEngine.setDialect(new LayoutDialect());
-		// templateEngine.addDialect(new SpringSecurityDialect());
-		return templateEngine;
-	}
-
-	@Bean
-	public ViewResolver getThymeleafViewResolver() {
-		ThymeleafViewResolver viewresolver = new ThymeleafViewResolver();
-		viewresolver.setTemplateEngine(templateEngine());
-		viewresolver.setOrder(0);
-		viewresolver.setViewNames(new String[] { "templates/*" });
-
-		return viewresolver;
-	}
-
-	/*
-	 * Spring MVC view resolver
-	 * =========================================================================
-	 */
-
-	@Bean
-	public InternalResourceViewResolver getInternalResourceViewResolver() {
-		InternalResourceViewResolver internalViewResolver = new InternalResourceViewResolver();
-		// internalViewResolver.setPrefix("/WEB-INF/views/");
-		internalViewResolver.setPrefix("classpath:/templates/");
-		internalViewResolver.setSuffix(".html");
-		internalViewResolver.setOrder(1);
-
-		return internalViewResolver;
-	}
-
-	@Override
-	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
-	}
 	
 	/*
 	 * It18 configuration
@@ -94,7 +42,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 		messageSource.setBasename("i18n/messages");
 		return messageSource;
 	}
-
+	
 	@Bean
 	public LocaleChangeInterceptor localeChangeInterceptor() {
 		LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
@@ -114,5 +62,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 		localeResolver.setDefaultLocale(new Locale("fr"));
 		return localeResolver;
 	}
+	
 
 }
+

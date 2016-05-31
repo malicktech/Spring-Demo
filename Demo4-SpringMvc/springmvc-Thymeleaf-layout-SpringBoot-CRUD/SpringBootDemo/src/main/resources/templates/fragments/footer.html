@@ -1,4 +1,4 @@
-<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 </head>
@@ -7,12 +7,24 @@
 		<nav class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="container">
 				<p class="navbar-text">
-					<a href="http://www.frameworkonly.com">FrameworkOnly</a> &copy;
-					<put-date th:text=${#dates.year(#dates.createNow())}></put-date>
-					| Connecting Problems & Solutions.
+					<a href="http://www.daktic.com">RdvMedecins</a> &copy;
+					<put-date th:text="${#dates.year(#dates.createNow())}"></put-date>
+footer.
 				</p>
 			</div>
 		</nav>
 	</div>
+	<div th:fragment="footer-admin">
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text">
+					<a href="http://www.daktic.com">RdvMedecins</a> &copy;
+					<put-date th:text="${#dates.year(#dates.createNow())}"></put-date>
+Admin Footer
+				</p>
+			</div>
+		</nav>
+	</div>
+	
 </body>
 </html>
