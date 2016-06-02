@@ -30,7 +30,7 @@ Building
 
  Once started, the application should be available at:
  
-     http://localhost:8080/stsm
+     http://localhost:9090/
 
 
  

@@ -19,6 +19,7 @@
  */
 package thymeleafexamples.stsm.business.entities;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -27,7 +28,7 @@ import java.util.List;
 public class SeedStarter {
 
     private Integer id = null;
-    private Date datePlanted = null;
+    private LocalDate datePlanted = null;
     private Boolean covered = null;
     private Type type = Type.PLASTIC;
     private Feature[] features = null;
@@ -50,12 +51,12 @@ public class SeedStarter {
     }
 
 
-    public Date getDatePlanted() {
+    public LocalDate getDatePlanted() {
         return this.datePlanted;
     }
 
 
-    public void setDatePlanted(final Date datePlanted) {
+    public void setDatePlanted(final LocalDate datePlanted) {
         this.datePlanted = datePlanted;
     }
 

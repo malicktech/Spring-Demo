@@ -74,7 +74,7 @@
           <div>
             <label for="datePlanted">
               <span th:text="#{seedstarter.datePlanted}">Date planted</span>
-              (<span th:text="#{date.format}">YYYY/MM/DD</span>)
+              (<span th:text="#{localdate.format}">YYYY/MM/DD</span>)
             </label>
             <input type="text" th:field="*{datePlanted}" th:errorclass="fieldError" />
           </div>

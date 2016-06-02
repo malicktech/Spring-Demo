@@ -19,6 +19,7 @@
  */
 package thymeleafexamples.stsm.web.controller;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -49,12 +50,6 @@ public class SeedStarterMngController {
     
     @Autowired
     private SeedStarterService seedStarterService;
-    
-    
-    
-    public SeedStarterMngController() {
-        super();
-    }
 
     
     
@@ -65,7 +60,7 @@ public class SeedStarterMngController {
     
     @ModelAttribute("allFeatures")
     public List<Feature> populateFeatures() {
-        return Arrays.asList(Feature.ALL);
+        return Arrays.  asList(Feature.ALL);
     }
     
     @ModelAttribute("allVarieties")
@@ -82,7 +77,7 @@ public class SeedStarterMngController {
     
     @RequestMapping({"/","/seedstartermng"})
     public String showSeedstarters(final SeedStarter seedStarter) {
-        seedStarter.setDatePlanted(Calendar.getInstance().getTime());
+        seedStarter.setDatePlanted(LocalDate.now());
         return "seedstartermng";
     }
     
