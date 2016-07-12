@@ -8,10 +8,24 @@
 		<artifactId>spring-boot-4tw</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
 	<artifactId>spring-boot-4tw-web</artifactId>
 	<name>Spring Boot For The Web :: Web</name>
 
 	<dependencies>
+		
+		<!-- Submodule dependencies -->
+		<!-- Config Diff -->
+		<dependency>
+			<groupId>org.test.springone</groupId>
+			<artifactId>spring-boot-4tw-config-diff</artifactId>
+		</dependency>
+		<!-- Module Jar contenant l'appli client angular -->
+		<dependency>
+			<groupId>org.test.springone</groupId>
+			<artifactId>spring-boot-4tw-client</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -33,22 +47,16 @@
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.test.springone</groupId>
-			<artifactId>spring-boot-4tw-config-diff</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.test.springone</groupId>
-			<artifactId>spring-boot-4tw-client</artifactId>
-		</dependency>
 
+
+		<!--JSR Cache-->
 		<dependency>
 			<groupId>javax.cache</groupId>
 			<artifactId>cache-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
+				<artifactId>ehcache</artifactId>
 			<version>3.0.0</version>
 		</dependency>
 
@@ -90,6 +98,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--enable to make the jar executable : (start without java -jar : ./spring-boot-4tw-web-0.0.1-SNAPSHOT.jar-->
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>pl.project13.maven</groupId>
@@ -103,6 +115,7 @@
 					</execution>
 				</executions>
 				<configuration>
+					<dotGitDirectory>${project.basedir}/../../.git</dotGitDirectory>
 					<verbose>true</verbose>
 					<dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
 					<generateGitPropertiesFile>true</generateGitPropertiesFile>

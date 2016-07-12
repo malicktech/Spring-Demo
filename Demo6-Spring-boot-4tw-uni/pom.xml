@@ -98,6 +98,8 @@
 						<space>development</space>
 					</configuration>
 				</plugin>
+				<!--A Maven plugin that downloads/installs Node and NPM locally, runs NPM install, Grunt, Gulp and/or Karma.-->
+				<!--https://github.com/eirslett/frontend-maven-plugin-->
 				<plugin>
 					<groupId>com.github.eirslett</groupId>
 					<artifactId>frontend-maven-plugin</artifactId>
