@@ -19,6 +19,10 @@ public class SpringBootVersionController {
 		this.bootVersionService = bootVersionService;
 	}
 
+	/**
+	 *
+	 * @return Les versions disponibles dans le repositories, pour l'autocomplétion coté client
+     */
 	@RequestMapping("/springboot/versions")
 	@ResponseBody
 	public List<String> fetchBootVersions() {
