@@ -1,8 +1,30 @@
-.classpath
-.project
-target/
-bin/
-.settings/
-.idea/
-*.iml
 
+
+*.sw[op]
+.DS_Store
+
+# IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+# Gradle
+.gradle
+build
+
+# Maven
+target
+dist
+node
+classes
+
+# eclipse
+.classpath
+
+.project
+
+bin
+
+.settings
