@@ -1,8 +1,7 @@
-
-var path = require('path'),
-    cssMinify = require('gulp-minify-css'),
+var gulp = require('gulp'),
+    path = require('path'),
+    cssMinify = require('gulp-clean-css'),
     less = require('gulp-less'),
-    gulp = require('gulp'),
     Builder = require('systemjs-builder');
 
 var paths = {
@@ -67,5 +66,5 @@ gulp.task('less', function () {
         .pipe(gulp.dest(paths.destination + '/css'));
 });
 
-gulp.task('build', ['optimize-and-copy-css', 'optimize-and-copy-js', 'copy-lib',
+gulp.task('default', ['optimize-and-copy-css', 'optimize-and-copy-js', 'copy-lib',
     'copy-config', 'copy-images', 'less', 'copy-assets'], function(){});
