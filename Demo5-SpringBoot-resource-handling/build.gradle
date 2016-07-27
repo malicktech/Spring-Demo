@@ -1,0 +1,4 @@
+//wrapper forçant l'utilisation de la version 1.4
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}

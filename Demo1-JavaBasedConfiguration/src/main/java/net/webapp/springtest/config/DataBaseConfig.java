@@ -61,8 +61,7 @@ public class DataBaseConfig {
 		dataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
 		return dataSource;
 	}
-	
-		// EntityManagerFactory
+
 
 
 	@Bean
@@ -93,7 +92,7 @@ public class DataBaseConfig {
 		// Transaction manager
 
 	@Bean
-	public PlatformTransactionManager transactionManager() {
+	public JpaTransactionManager transactionManager() {
 		/*
 		 * JpaTransactionManager jpaTransactionManager = new JpaTransactionManager();
 		 * jpaTransactionManager.setEntityManagerFactory(entityManagerFactory()); return jpaTransactionManager;
@@ -105,7 +104,7 @@ public class DataBaseConfig {
 	// JPAVendorAdapter does seem to be the preferred approach
 	 @Bean 
 	 public JpaVendorAdapter jpaVendorAdaper() { 
-		 final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter(); // vendorAdapter.setDatabase();
+		 final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		 vendorAdapter.setDatabase(env.getRequiredProperty("jpa.database", Database.class));
 		 vendorAdapter.setDatabasePlatform(env.getRequiredProperty("jpa.databasePlateform"));
 		 vendorAdapter.setShowSql(env.getRequiredProperty("jpa.showSql", Boolean.class));

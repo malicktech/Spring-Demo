@@ -1,0 +1,11 @@
+description = 'core'
+
+dependencies {
+
+    compile project(":common")
+
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    // compile("org.yaml:snakeyaml") // already included if you use the spring-boot-starter
+    compile("com.h2database:h2")
+
+}

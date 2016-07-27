@@ -1,6 +1,6 @@
 ## Spring Test Repo 
 
-Set of Sample app used for my experimental test of the features of the Spring Framework
+Set of Sample app I use for my experimental test of Spring features/technology Framework
 
 
 ## demo 5 |  Spring-boot-resource-handling
