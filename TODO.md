@@ -20,6 +20,10 @@ http://ippon.developpez.com/tutoriels/spring/spring-loaded/
 	* Spring Cloud
 	
 	* Spring Boot + integration test + selenium
+   
+    * HATEAOS
+    * Spring Batch
+    * Spring Social
 	
 	
 

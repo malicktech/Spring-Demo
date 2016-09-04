@@ -18,3 +18,9 @@ Set of Sample app I use for my experimental test of Spring features/technology F
 
 Devoxx France 2016 - Advanced setting for spring boot environment
 [Spring Boot 1.3 pour le web By Brian Clozel - Stéphane Nicoll](https://www.youtube.com/watch?v=sR8PyhJa-Zw)
+
+
+## demo 9 |Spring Data sorl showcase
+
+forked from 
+[github.com/christophstrobl/spring-data-solr-showcase](https://github.com/christophstrobl/spring-data-solr-showcase)
