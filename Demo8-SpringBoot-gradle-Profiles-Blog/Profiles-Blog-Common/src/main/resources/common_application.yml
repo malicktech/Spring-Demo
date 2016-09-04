@@ -1,0 +1,66 @@
+spring:
+    jpa:
+        hibernate.naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+# LIQUIBASE properties
+# Way 1 : Autoconfig
+liquibase:
+    changeLog: classpath:config/liquibase/changelog-master.xml
+# Way 2 : JavaConfig with async properties for liquibase bean define in DatabaseConfiguration.java
+#profilesblog:
+ #   async:
+  #      corePoolSize: 2
+   #     maxPoolSize: 50
+    #    queueCapacity: 10000
+
+
+---
+
+spring:
+    # DEV Profile
+    # ===============================================================
+    profiles: dev
+
+    jpa:
+      hibernate.ddl-auto: validate
+      database: MYSQL
+      show-sql: false
+      datasource:
+          url: jdbc:mysql://localhost:3306/dev_spring_demo8_profileblog
+          username: admin
+          password: admin
+
+# Enable liquibase support
+liquibase:
+    enabled: true
+    # Comma-separated list of runtime contexts to use.
+    contexts: no-seed
+
+---
+
+spring:
+    # DEV Profile
+    # ===============================================================
+    profiles: prod
+    jpa:
+        hibernate.ddl-auto: validate
+        database: MYSQL
+        show-sql: false
+
+liquibase:
+  enabled: false
+
+---
+
+spring:
+    # DEV Profile
+    # ===============================================================
+    profiles: test
+    jpa:
+        hibernate.ddl-auto: validate
+        database: H2
+        show-sql: false
+
+liquibase:
+  enabled: false
+  contexts: seed

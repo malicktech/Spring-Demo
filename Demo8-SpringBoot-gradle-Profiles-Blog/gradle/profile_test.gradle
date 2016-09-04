@@ -1,0 +1,6 @@
+subprojects {
+    dependencies {
+        compile 'org.springframework.boot:spring-boot-starter-undertow'
+        compile 'com.h2database:h2'
+    }
+}

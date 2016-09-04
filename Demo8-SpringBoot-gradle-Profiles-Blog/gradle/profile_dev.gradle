@@ -1,0 +1,31 @@
+
+project(':Profiles-Blog-Common') {
+	dependencies {
+		compile 'mysql:mysql-connector-java'
+	}
+}
+
+project(':Profiles-Blog-Receiver') {
+	dependencies {
+	}
+}
+
+configure([project(':Profiles-Blog-Sender'), project(':Profiles-Blog-Receiver')]) {
+	dependencies {
+		compile 'org.springframework.boot:spring-boot-starter-tomcat'
+	}
+}
+
+subprojects {
+
+}
+
+
+
+
+
+
+
+
+
+

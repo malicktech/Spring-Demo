@@ -1,0 +1,19 @@
+description = 'Profiles-Blog-Common'
+
+// only mandatory configuration for the plugin Application
+// specification of the main class (i.e. entry point) of the application : can run the application by executing the run task
+mainClassName = 'org.jdw.blog.CommonMain'
+
+jar {
+    baseName = 'Profiles-Blog-Common'
+    manifest {
+        attributes 'Main-Class' : 'org.jdw.blog.CommonMain'
+    }
+}
+
+// task added by springboot plugin
+// Prevents common subproject dependencies from being included in the common jar itself.
+// Without this, each subproject that included common would include each shared dependency twice.
+bootRepackage {
+    enabled = false
+}
