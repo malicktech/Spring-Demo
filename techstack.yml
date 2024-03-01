@@ -1,0 +1,563 @@
+repo_name: malicktech/Spring-Demo
+report_id: 4f9af7e1da503638645ec54423a8d8bb
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-01T22:51:10+00:00'
+requested_by: malicktech
+provider: github
+branch: master
+detected_tools_count: 45
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo
+  detection_source: Repo Metadata
+- name: Groovy
+  description: A multi-faceted language for the Java platform
+  website_url: https://groovy-lang.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/997/default_7ff5fcd857f42ad25149f659693d8930bffddf14.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/malicktech/Spring-Demo
+  detection_source: Repo Metadata
+- name: SQL
+  description: It is a domain-specific language used in programming
+  website_url: https://en.wikipedia.org/wiki/SQL
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo4-SpringMvc/springmvc-Thymeleaf-layout-SpringBoot-CRUD/exampledb.sql
+  detection_source: Demo4-SpringMvc/springmvc-Thymeleaf-layout-SpringBoot-CRUD/exampledb.sql
+  last_updated_by: Malick
+  last_updated_on: 2016-04-20 00:07:51.000000000 Z
+- name: Smarty
+  description: Template engine for PHP
+  website_url: http://www.smarty.net/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/service/3693/smarty.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo
+  detection_source: Repo Metadata
+- name: Bootstrap
+  description: Simple and flexible HTML, CSS, and JS for popular UI components and
+    interactions
+  website_url: http://getbootstrap.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: Spring Framework
+  description: An application framework and inversion of control container for the
+    Java platform
+  website_url: https://spring.io/projects/spring-framework
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/2006/spring-framework-project-logo.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: jQuery
+  description: The Write Less, Do More, JavaScript Library.
+  website_url: http://jquery.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: H2 Database
+  description: A relational database management system written in Java
+  website_url: http://www.h2database.com/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/3105/h2-logo_square_400x400.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo7-SpringBoot-gradle-multiMod/core/build.gradle
+  detection_source: Demo7-SpringBoot-gradle-multiMod/core/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-27 02:12:12.000000000 Z
+- name: Liquibase
+  description: Easily track, version &amp; deploy database changes
+  website_url: https://www.liquibase.com
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/1398/y1As8_s5_400x400.jpg
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  detection_source: Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-09-04 23:08:18.000000000 Z
+- name: Bower
+  description: A package manager for the web
+  website_url: http://bower.io
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/847/66db62603f426a8fc6664081811be6d4.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo
+  detection_source: Repo Metadata
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: JSPM
+  description: Frictionless browser package management
+  website_url: http://jspm.io/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2869/SD4SNJm8_400x400.jpg
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/client/package.json
+  detection_source: Demo5-SpringBoot-resource-handling/client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: Logback
+  description: A logging framework for Java applications
+  website_url: https://logback.qos.ch/
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/2923/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo1-JavaBasedConfiguration/src/main/resources/logback.xml
+  detection_source: Demo1-JavaBasedConfiguration/src/main/resources/logback.xml
+  last_updated_by: Malick
+  last_updated_on: 2016-04-04 03:47:12.000000000 Z
+- name: TestNG
+  description: A testing framework inspired from JUnit and NUnit
+  website_url: http://testng.org/doc/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/8900/no-img-open-source.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/.travis.yml
+  detection_source: Demo5-SpringBoot-resource-handling/.travis.yml
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: gulp
+  description: The streaming build system
+  website_url: http://gulpjs.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/844/iruTC031.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/client/package.json
+  detection_source: Demo5-SpringBoot-resource-handling/client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 14:04:20.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: Apache Camel
+  description: A versatile open source integration framework
+  website_url: https://camel.apache.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Platform as a Service
+  image_url: https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo1-JavaBasedConfiguration/src/main/resources/application.properties
+  detection_source: Demo1-JavaBasedConfiguration/src/main/resources/application.properties
+  last_updated_by: Malick
+  last_updated_on: 2016-04-04 03:47:12.000000000 Z
+- name: com.h2database:h2
+  description: H2 Database Engine
+  license: MIT-feh
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo7-SpringBoot-gradle-multiMod/core/build.gradle
+  detection_source: Demo7-SpringBoot-gradle-multiMod/core/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-27 02:12:12.000000000 Z
+- name: com.mattbertolini:liquibase-slf4j
+  description: Liquibase SLF4J Logger
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  detection_source: Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-09-04 23:08:18.000000000 Z
+- name: javax.servlet:jstl
+  license: GPL-2.0-with-classpath-exception
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: org.apache.commons:commons-lang3
+  description: Apache Commons Lang
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  detection_source: Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-09-04 23:08:18.000000000 Z
+- name: org.apache.tomcat.embed:tomcat-embed-jasper
+  description: Core Tomcat implementation
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: org.codehaus.groovy:groovy-all
+  description: 'Groovy: A powerful, dynamic language for the JVM'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: org.hibernate:hibernate-validator
+  description: Hibernate's Bean Validation
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  detection_source: Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-09-04 23:08:18.000000000 Z
+- name: org.liquibase:liquibase-core
+  description: Liquibase is a tool for managing and executing database changes
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  detection_source: Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-09-04 23:08:18.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-actuator
+  description: Starter for using Spring Boot's Actuator which provides production
+    ready features to help you monitor and manage your application
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  detection_source: Demo8-SpringBoot-gradle-Profiles-Blog/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-09-04 23:08:18.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-data-jpa
+  description: Starter for using Spring Data JPA with Hibernate
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo7-SpringBoot-gradle-multiMod/common/build.gradle
+  detection_source: Demo7-SpringBoot-gradle-multiMod/common/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-27 02:12:12.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-test
+  description: Starter for testing Spring Boot applications with libraries including
+    JUnit
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-web
+  description: Starter for building web, including RESTful, applications using Spring
+    MVC
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: org.testng:testng
+  description: Testing framework for Java
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/server/build.gradle
+  detection_source: Demo5-SpringBoot-resource-handling/server/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: org.yaml:snakeyaml
+  description: YAML 1.1 parser and emitter for Java
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo7-SpringBoot-gradle-multiMod/core/build.gradle
+  detection_source: Demo7-SpringBoot-gradle-multiMod/core/build.gradle
+  last_updated_by: Malick
+  last_updated_on: 2016-07-27 02:12:12.000000000 Z
+- name: bower
+  description: The browser package manager
+  package_url: https://www.npmjs.com/bower
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16205/default_b4f5b6f31c5ab1ffee4bacf20842cd41a8f2658d.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: gulp-clean-css
+  description: Minify css with clean-css
+  package_url: https://www.npmjs.com/gulp-clean-css
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16301/default_3b7197abc4df3d7fa7c5292f17b2e6fb0cd1c8d4.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/client/package.json
+  detection_source: Demo5-SpringBoot-resource-handling/client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 14:04:20.000000000 Z
+- name: gulp-less
+  description: Less for Gulp
+  package_url: https://www.npmjs.com/gulp-less
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16267/default_dc80ff0a17bac19253430a4f0f586714841116db.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/client/package.json
+  detection_source: Demo5-SpringBoot-resource-handling/client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 14:04:20.000000000 Z
+- name: gulp-uglify
+  description: Minify files with UglifyJS
+  package_url: https://www.npmjs.com/gulp-uglify
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15910/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: gulp-util
+  description: Utility functions for gulp plugins
+  package_url: https://www.npmjs.com/gulp-util
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15912/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/client/package.json
+  detection_source: Demo5-SpringBoot-resource-handling/client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 14:04:20.000000000 Z
+- name: systemjs-builder
+  description: SystemJS Build Tool
+  package_url: https://www.npmjs.com/systemjs-builder
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17386/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo5-SpringBoot-resource-handling/client/package.json
+  detection_source: Demo5-SpringBoot-resource-handling/client/package.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-18 12:55:12.000000000 Z
+- name: angular
+  description: Bower package for AngularJS
+  package_url: http://bower.io/angular
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: angular-bootstrap
+  description: Native AngularJS
+  package_url: http://bower.io/angular-bootstrap
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: angular-route
+  description: Angular-route bower repo
+  package_url: http://bower.io/angular-route
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
+- name: bootstrap
+  description: The most popular front-end framework for developing responsive
+  package_url: http://bower.io/bootstrap
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/malicktech/Spring-Demo/blob/master/Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  detection_source: Demo6-SpringBoot-4tw-uni/spring-boot-4tw-client/bower.json
+  last_updated_by: Malick
+  last_updated_on: 2016-07-10 03:28:41.000000000 Z
